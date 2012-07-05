@@ -1,0 +1,15 @@
+Graphity is a graph data base index (currently based on @neo4j) that supports fast retrieval of social news stream like twitter / facebook. 
+
+Its runtime depends only linear on the amount of retrieved items. 
+
+It thus scales to networks of arbitrary size and was tested on networks with 2 mio. nodes.
+
+This repo contains the source code of graphity together with an evaluation frame work against several baselines.
+
+Graphity is invented by Rene Pickhardt (http://www.rene-pickhardt.de/graphity) for its potential use on http://www.metalcon.de a german based social network service for metal fans and metal bands. The evaluation framework was developed by Jonas Kunze (jonas@metalcon.de) and Rene Pickhardt (rene@rene-pickhardt.de)
+
+Graphity as well as the evaluation framework is relesed under an AGPL licence which means that you can use it for free in your projects if you are open source. Otherwise you need to buy a commercial licence.
+
+The index is discussed in a scientific research paper at Socialcom2012 in Amsterdam and in Renes Blogpost http://www.rene-pickhardt.de/graphity
+
+If you use the source code in any scientific work please cite the paper.
