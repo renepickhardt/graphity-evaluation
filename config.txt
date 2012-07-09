@@ -1,0 +1,86 @@
+wikiTransactionsFile = input/de-events.log
+SortedWikiTransactionsFile = input/de-events.log.sorted
+CleanWikiTransactionsFile = input/de-events.log.sorted.clean
+
+CleanWikiSnapshotUpdatePrefix = input/de-events.log.sorted.clean.snupdatesto
+CleanWikiSnapshotFriendPrefix = input/de-events.log.sorted.clean.snfriend
+MetalconUpdates = input/metalcon-updates
+MetalconUpdatesSorted = input/metalcon-updates-sorted
+
+SampleTimestamp = 1233442800
+SamplePrefix = input/sample
+SampleStartDegrees=1;11;21;31;41;51;61;71;81;91
+#1;11;21;31;41;51;61;71;81;91
+SampleDegrees=10
+SampleSize=3000
+SampleRepeatRuns = 100
+
+IgnoreSmallDegreeNodes = false
+MinimumNodeDegree = 10
+
+StarSnapshotTimestamps=1075590000;1107212400;1138748400;1170284400;1201820400;1233442800;1264978800;1296514800
+#1075590000;1107212400;1138748400;1170284400;1201820400;1233442800;1264978800;1296514800
+#StarSnapshotTimestamps=1075590000;1107212400;1138748400;1170284400;1201820400;1233442800;1264978800;1296514800
+
+WikiFullIDList = input/de-nodeIds.txt
+MetalconFullIDList = input/metalcon-nodeIds.txt
+SnapshotIDListPrefix = input/de-nodeIds.txt
+
+DegreeMapPrefix = input/degree-map
+LargeDegreeNodesPrefix = input/wiki-large-degree-nodes
+DegreeDistributionPrefix = input/degree-distribution
+MetalconDegreeDistribution = input/metalcon-degree-distribution
+	 
+MetalconRun = true
+CreateMetalconFiles = false
+
+MemDir = /dev/shm/dbs
+RunOnMemory = true
+WarmumpDB = false
+
+StarDBDirPrefix = dbs/star
+FFDBDirPrefix = dbs/ff
+BlouDBDirPrefix = dbs/blou
+CleanFriendDBPrefix = dbs/cleanFriendDB
+GraphityDBDirPrefix = dbs/graphity
+MetalconDB = dbs/metalcon
+
+SortWikiTransactions = false
+CleanWikiTransactions = false
+
+SplitCleanDumps = false
+GenerateSnapshotIDLists = false
+
+
+k=15
+runs=3
+
+CreateStarDBs = false
+AddAllEntitiesToAllSnapshots = false
+GenerateDegreeList = false
+GenerateDegreeSamples = false
+
+BaseLineUpdateEvaluatorInsertUpdates = false
+BaseLineUpdateEvaluatorEvaluate = false
+
+BlouUpdateEvaluatorInsertUpdates = false
+BlouUpdateEvaluatorEvaluate = false
+BlouUpdateEvaluatorEvaluateDegree  = false
+BlouUpdateEvaluatorSimulate = false
+
+FlatFileUpdateEvaluatorInsertUpdates = true
+FlatFileUpdateEvaluatorEvaluate = true
+
+ResetGraphity = false
+BuildGraphity = false
+ReadGraphityStreams = false
+ReadGraphityStreamsDegree  = false
+SimulateGraphity = false
+
+numberOfEventsToSimulate = 500000
+SimulateEventsPrefix = input/de-wiki-incremet-
+
+
+#neo4j settings!
+use_memory_mapped_buffers = false
+cache_type = strong
